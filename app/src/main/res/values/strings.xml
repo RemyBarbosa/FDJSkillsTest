@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Try And Learn</string>
+    <string name="app_name">FDJSkillsTest</string>
 
     <string name="hourly_weather">Weather Detail here :)</string>
+    <string name="search">Search</string>
 </resources>

@@ -3,45 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/weatherListFragment">
+    app:startDestination="@id/teamListFragment">
     <fragment
-        android:id="@+id/weatherListFragment"
-        android:name="com.tryandlearn.weather.ui.list.WeatherListFragment"
-        android:label="fragment_weather_list"
-        tools:layout="@layout/fragment_weather_list" >
+        android:id="@+id/teamListFragment"
+        android:name="com.fdj.skillstest.team.ui.list.TeamListFragment"
+        android:label="fragment_team_list"
+        tools:layout="@layout/fragment_team_list" >
         <action
-            android:id="@+id/action_weatherListFragment_to_weatherDetailFragment"
-            app:destination="@id/weatherDetailFragment" >
+            android:id="@+id/action_teamListFragment_to_teamrDetailFragment"
+            app:destination="@id/teamDetailFragment" >
             <argument
-                android:name="latitude"
-                app:argType="float" />
-            <argument
-                android:name="longitude"
-                app:argType="float" />
-            <argument
-                android:name="units"
-                app:argType="string" />
-            <argument
-                android:name="appId"
+                android:name="teamName"
                 app:argType="string" />
         </action>
     </fragment>
     <fragment
-        android:id="@+id/weatherDetailFragment"
-        android:name="com.tryandlearn.weather.ui.detail.WeatherDetailFragment"
-        android:label="fragment_weather_detail"
-        tools:layout="@layout/fragment_weather_detail" >
+        android:id="@+id/teamDetailFragment"
+        android:name="com.fdj.skillstest.team.ui.detail.TeamDetailFragment"
+        android:label="fragment_team_detail"
+        tools:layout="@layout/fragment_team_detail" >
         <argument
-            android:name="latitude"
-            app:argType="float" />
-        <argument
-            android:name="longitude"
-            app:argType="float" />
-        <argument
-            android:name="units"
-            app:argType="string" />
-        <argument
-            android:name="appId"
+            android:name="teamName"
             app:argType="string" />
     </fragment>
 </navigation>

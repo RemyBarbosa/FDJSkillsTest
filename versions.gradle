@@ -22,7 +22,7 @@ ext {
     navVersion = "2.3.0"
 
     // Square versions
-    retrofitVersion = "2.3.0"
+    retrofitVersion = "2.6.0"
 
     //Others
     koinVersion = "1.0.2"

@@ -1,2 +1,2 @@
 include ':app', ':interface-adapter', ':use-case', ':entity'
-rootProject.name='TryAndLearn'
+rootProject.name='FDJSKillsTest'
