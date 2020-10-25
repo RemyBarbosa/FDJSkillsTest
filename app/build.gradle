@@ -13,7 +13,6 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
-        testInstrumentationRunner "com.tryandlearn.util.MockTestRunner"
     }
 
     buildTypes {
@@ -64,10 +63,4 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation "com.squareup.okhttp3:mockwebserver:$mockwebserverVersion"
     androidTestImplementation "com.jakewharton.espresso:okhttp3-idling-resource:$okhttp3IdlingVersion"
-
-//    androidTestImplementation "com.squareup.okhttp3:mockwebserver:4.7.2"
-//
-//    def multidex_version = "2.0.1"
-//    implementation "androidx.multidex:multidex:$multidex_version"
-
 }
